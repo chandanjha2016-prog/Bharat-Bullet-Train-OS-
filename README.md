@@ -33,3 +33,9 @@ Halka, tez, aur Hindi me kaam karne wala OS.
 1.  **ISO Download karo**
     ```bash
     [Download Link]
+
+    ---
+**Chandan Kumar**  
+`Creator - Bharat Bullet Train OS` 🚄  
+Fresher Web Developer | Little Master Blaster AI Scientist  
+📍 Jamalpur, Bihar | [GitHub](https://github.com/chandan-kumar)
