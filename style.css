@@ -1,1 +1,61 @@
 
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background: linear-gradient(135deg, #0a1f44, #0047ab); height: 100vh; color: white; }
+
+.hidden { display: none!important; }
+
+/* Login */
+.login {
+  height: 100vh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 15px;
+}
+.login h1 { color: #ffcc00; }
+.login input,.login button {
+  padding: 12px; width: 300px; border-radius: 8px; border: none; font-size: 16px;
+}
+.login button { background: #ff6600; color: white; cursor: pointer; font-weight: bold; }
+
+/* OS */
+.os { height: 100vh; display: flex; flex-direction: column; }
+.topbar {
+  background: #001a33; padding: 12px 20px; display: flex;
+  justify-content: space-between; font-weight: bold; border-bottom: 2px solid #ff6600;
+}
+.desktop {
+  flex: 1; padding: 40px; display: grid;
+  grid-template-columns: repeat(auto-fit, 120px); gap: 30px; justify-content: center;
+}
+.icon {
+  text-align: center; cursor: pointer; padding: 15px;
+  background: rgba(255,255,255,0.05); border-radius: 15px; transition: 0.3s;
+}
+.icon:hover { background: rgba(255,255,255,0.15); transform: scale(1.05); }
+.icon div { font-size: 45px; }
+
+.dock {
+  background: rgba(0,0,0,0.6); padding: 12px; display: flex;
+  justify-content: center; gap: 25px; border-top: 2px solid #ff6600;
+}
+.dock button {
+  font-size: 26px; background: #ff6600; border: none; padding: 12px 18px;
+  border-radius: 12px; cursor: pointer; color: white;
+}
+
+.window {
+  position: absolute; top: 80px; left: 50%; transform: translateX(-50%);
+  width: 80%; max-width: 900px; height: 70%; background: #f0f0f0;
+  color: black; border-radius: 15px; box-shadow: 0 0 30px rgba(0,0,0,0.7);
+  display: flex; flex-direction: column;
+}
+.window-header {
+  background: #ff6600; color: white; padding: 12px 15px;
+  display: flex; justify-content: space-between; border-radius: 15px 15px 0 0; font-weight: bold;
+}
+.window-body { padding: 20px; overflow-y: auto; flex: 1; }
+.window-body input,.window-body button,.window-body select {
+  padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid #ccc; width: 100%;
+}
+.window-body button { background: #0047ab; color: white; border: none; cursor: pointer; }
+.progress { background: #ddd; border-radius: 10px; height: 20px; margin: 10px 0; }
+.progress-bar { background: #ff6600; height: 100%; border-radius: 10px; text-align: center; color: white; }
