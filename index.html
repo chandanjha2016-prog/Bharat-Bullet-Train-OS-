@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bharat Bullet Train OS v2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login Screen -->
+  <div id="loginScreen" class="login">
+    <h1>🚄 Bharat Bullet Train OS</h1>
+    <input type="text" id="username" placeholder="Username: driver / tt / admin">
+    <input type="password" id="password" placeholder="Password: 1234">
+    <button onclick="login()">Login</button>
+    <p id="loginError"></p>
+  </div>
+
+  <!-- Main OS -->
+  <div id="osScreen" class="os hidden">
+    <div class="topbar">
+      <span>🚄 Bharat Bullet Train OS v2.0 | User: <b id="userRole"></b></span>
+      <span id="time"></span>
+    </div>
+
+    <div class="desktop">
+      <div class="icon" onclick="openApp('dashboard')"><div>📊</div><p>Dashboard</p></div>
+      <div class="icon" onclick="openApp('speed')"><div>🚦</div><p>Speed Control</p></div>
+      <div class="icon" onclick="openApp('map')"><div>🗺️</div><p>Live Route Map</p></div>
+      <div class="icon" onclick="openApp('ticket')"><div>🎫</div><p>Ticket Booking</p></div>
+      <div class="icon" onclick="openApp('announce')"><div>📢</div><p>Auto Announcement</p></div>
+      <div class="icon" onclick="openApp('settings')"><div>⚙️</div><p>Settings</p></div>
+    </div>
+
+    <div id="window" class="window hidden">
+      <div class="window-header">
+        <span id="window-title">App</span>
+        <button onclick="closeApp()">X</button>
+      </div>
+      <div id="window-body" class="window-body"></div>
+    </div>
+
+    <div class="dock">
+      <button onclick="openApp('dashboard')">📊</button>
+      <button onclick="openApp('speed')">🚦</button>
+      <button onclick="openApp('map')">🗺️</button>
+      <button onclick="openApp('ticket')">🎫</button>
+      <button onclick="logout()">🚪</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
