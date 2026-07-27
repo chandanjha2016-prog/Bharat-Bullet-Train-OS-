@@ -46,7 +46,7 @@ Developer | Bharat Bullet Train OS
 
 📍 Jamalpur, Bihar, India
 📱 +91-7739285002
-📧 chandanjha2017@gmail.com
+📧 chandanjha2016@gmail.com
 🔗 GitHub: github.com/chandanjha2016-prog/Bharat-Bullet-Train-OS
 🌐 Demo: chandanjha2016-prog.github.io/Bharat-Bullet-Train-OS
 
